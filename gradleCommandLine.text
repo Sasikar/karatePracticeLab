@@ -11,3 +11,5 @@ gradle test -Dkarate.options="--tags @positive,@negative"
 gradle test "-Dkarate.options=classpath:featurefiles/karate02Json.feature"
 
 parallel execution on scenario level not on feature level
+
+testintg
