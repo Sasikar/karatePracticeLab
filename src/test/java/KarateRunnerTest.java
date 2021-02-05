@@ -16,13 +16,13 @@ import java.util.List;
 //@KarateOptions(tags = "@demo")
 //@KarateOptions(tags = "@demo,@demo1")
 //@KarateOptions(features = "classpath:featurefiles/karate")
-@KarateOptions(tags = "@select,@insert", features = "classpath:Featurefiles/DBTest1.feature")
+//@KarateOptions(tags = "@select,@insert", features = "classpath:Featurefiles/DBTest1.feature")
 
 class KarateRunnerTest {
 
     @Test
     public void testrunAll() {
-        Results res = Runner.parallel(getClass(), 1);
+        Results res = Runner.parallel(getClass(), 5);
         generateReport(res.getReportDir());
     }
 

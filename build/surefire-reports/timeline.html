@@ -12,8 +12,8 @@
   <body>
     <div id="visualization"></div>
     <script>
-var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"DBTest1[1:8]","start":812,"end":1265,"title":"DBTest1[1:8] 05:30:00.812-05:30:01.265 select stmt test case"},{"id":2,"group":1,"content":"DBTest1[2:15]","start":1281,"end":1328,"title":"DBTest1[2:15] 05:30:01.281-05:30:01.328 insert stmt test case"}]);
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-2"},{"id":3,"content":"ForkJoinPool-1-worker-3"},{"id":4,"content":"ForkJoinPool-1-worker-4"},{"id":5,"content":"ForkJoinPool-1-worker-5"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"karate02Json[1:4]","start":985,"end":1016,"title":"karate02Json[1:4] 05:30:00.985-05:30:01.016 Karate Json TestCase1"},{"id":2,"group":2,"content":"karate02Json[2:11]","start":985,"end":1016,"title":"karate02Json[2:11] 05:30:00.985-05:30:01.016 Karate Json TestCase2"},{"id":3,"group":3,"content":"karate02Json[3:24]","start":985,"end":1016,"title":"karate02Json[3:24] 05:30:00.985-05:30:01.016 Karate Json TestCase3"},{"id":4,"group":4,"content":"karate02Json[4:31]","start":985,"end":1000,"title":"karate02Json[4:31] 05:30:00.985-05:30:01.000 Karate Json TestCase4"},{"id":5,"group":5,"content":"karate02Json[5:37]","start":985,"end":1000,"title":"karate02Json[5:37] 05:30:00.985-05:30:01.000 Karate Json TestCase5"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });

@@ -1,5 +1,5 @@
-<testsuite failures="0" name="featurefiles/DataDrivenTesting.feature" skipped="0" tests="4" time="1.23431">
-  <testcase classname="featurefiles.DataDrivenTesting" name="DDT TestCase1" time="0.314771">
+<testsuite failures="0" name="featurefiles/DataDrivenTesting.feature" skipped="0" tests="4" time="1.773719">
+  <testcase classname="featurefiles.DataDrivenTesting" name="DDT TestCase1" time="0.815673">
     <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
 And header Content-Type = "application/x-www-form-urlencoded" ............. passed
 And request "Celsius=37" .................................................. passed
@@ -11,7 +11,7 @@ Then status 200 ........................................................... pass
 * print response .......................................................... passed
 * match response //string == 98.6 ......................................... passed</system-out>
   </testcase>
-  <testcase classname="featurefiles.DataDrivenTesting" name="DDT TestCase1" time="0.297963">
+  <testcase classname="featurefiles.DataDrivenTesting" name="DDT TestCase1" time="0.329769">
     <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
 And header Content-Type = "application/x-www-form-urlencoded" ............. passed
 And request "Celsius=37" .................................................. passed
@@ -33,7 +33,7 @@ Then status 200 ........................................................... pass
 * print response .......................................................... passed
 * match response //string == 104 .......................................... passed</system-out>
   </testcase>
-  <testcase classname="featurefiles.DataDrivenTesting" name="DDT TestCase2" time="0.316084">
+  <testcase classname="featurefiles.DataDrivenTesting" name="DDT TestCase2" time="0.31893">
     <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
 And header Content-Type = "application/x-www-form-urlencoded" ............. passed
 And request "Celsius=37" .................................................. passed
@@ -65,7 +65,7 @@ Then status 200 ........................................................... pass
 * print response .......................................................... passed
 * match response //string == 98.6 ......................................... passed</system-out>
   </testcase>
-  <testcase classname="featurefiles.DataDrivenTesting" name="DDT TestCase2" time="0.305492">
+  <testcase classname="featurefiles.DataDrivenTesting" name="DDT TestCase2" time="0.309347">
     <system-out>Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
 And header Content-Type = "application/x-www-form-urlencoded" ............. passed
 And request "Celsius=37" .................................................. passed

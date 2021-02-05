@@ -1,1 +1,1 @@
-{"features":1,"ignored":0,"efficiency":0.35158639999999997,"failures":null,"totalTime":483.43129999999996,"threads":1,"scenarios":2,"failed":0,"passed":2,"version":"0.9.6","elapsedTime":1375.0}
+{"features":1,"ignored":0,"efficiency":0.01179734693877551,"failures":{"featurefiles.karate02Json":"karate02Json.feature:41 - path: $.tool.version, actual: '0.9.6', expected: '0.9.7', reason: not equal"},"totalTime":63.5877,"threads":5,"scenarios":5,"failed":1,"passed":4,"version":"0.9.6","elapsedTime":1078.0}

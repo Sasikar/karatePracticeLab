@@ -1,111 +1,126 @@
-15:38:36.068 From karate-config file 
-15:38:36.630 [print] 101,Selenium,Se-HQ,
-102,UFT,Microfocus,
-103,RFT,IBM Rational,
-104,SilkTest,Microfocus,
-1111,TestComplete,SmartBear,
-106,Sasi,Sasi,
-
-15:38:36.646 after scenario inside config 
-15:38:36.646 From karate-config file 
-15:38:36.677 [print] Success
-15:38:36.693 after scenario inside config 
-
-15:23:33.083 end of test 
-15:23:33.083 after scenario inside config 
-s:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <soap:Body>
-<CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/">
-  <Celsius>37</Celsius>
-</CelsiusToFahrenheit>
-  </soap:Body>
-</soap:Envelope>
-
-15:21:11.427 response time in milliseconds: 502.79
-1 < 200
-1 < Cache-Control: private, max-age=0,public
-1 < Content-Type: text/xml; charset=utf-8
-1 < Date: Fri, 05 Feb 2021 09:42:59 GMT
-1 < Server: Microsoft-IIS/7.5
-1 < Vary: Accept-Encoding
-1 < X-AspNet-Version: 4.0.30319
-1 < X-Frame-Options: SAMEORIGIN
-1 < X-Powered-By: ASP.NET
-<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"><CelsiusToFahrenheitResult>98.6</CelsiusToFahrenheitResult></CelsiusToFahrenheitResponse></soap:Body></soap:Envelope>
-
-15:21:11.427 [print] {
-  "Cache-Control": [
-    "private, max-age=0,public"
-  ],
-  "Content-Type": [
-    "text/xml; charset=utf-8"
-  ],
-  "Date": [
-    "Fri, 05 Feb 2021 09:42:59 GMT"
-  ],
-  "Server": [
-    "Microsoft-IIS/7.5"
-  ],
-  "Vary": [
-    "Accept-Encoding"
-  ],
-  "X-AspNet-Version": [
-    "4.0.30319"
-  ],
-  "X-Frame-Options": [
-    "SAMEORIGIN"
-  ],
-  "X-Powered-By": [
-    "ASP.NET"
-  ]
+16:04:28.662 From karate-config file 
+16:04:28.740 [print] {
+  "id": "101",
+  "tool": {
+    "name": "Karate",
+    "version": "0.9.6"
+  }
 }
 
-15:21:11.427 [print] [
-  "Microsoft-IIS/7.5"
-]
-
-15:21:11.443 [print] true
-15:21:11.443 [print] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <soap:Body>
-    <CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/">
-      <CelsiusToFahrenheitResult>98.6</CelsiusToFahrenheitResult>
-    </CelsiusToFahrenheitResponse>
-  </soap:Body>
-</soap:Envelope>
-
-15:21:11.458 [print] 503
-15:21:11.474 [print] 200
-15:21:11.474 after scenario inside config 
-15:21:11.490 From karate-config file 
-15:21:11.505 not a js function or feature file: [type: XML, value: [#document: null]]
-15:21:11.505 request:
-1 > POST https://www.w3schools.com/xml/tempconvert.asmx
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 359
-1 > Content-Type: text/xml; charset=UTF-8
+16:04:28.740 [print] 101
+16:04:28.740 [print] Karate
+16:04:28.755 after scenario inside config 
+: application/x-www-form-urlencoded; charset=UTF-8
 1 > Host: www.w3schools.com
-1 > SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <soap:Body>
-        <CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/">
-            <Celsius>37</Celsius>
-        </CelsiusToFahrenheit>
-    </soap:Body>
-</soap:Envelope>
+Celsius=37
 
-15:21:11.833 response time in milliseconds: 329.90
+15:56:13.787 response time in milliseconds: 505.96
 1 < 200
 1 < Cache-Control: private, max-age=0,public
 1 < Content-Type: text/xml; charset=utf-8
-1 < Date: Fri, 05 Feb 2021 09:43:00 GMT
+1 < Date: Fri, 05 Feb 2021 10:18:02 GMT
 1 < Server: Microsoft-IIS/7.5
 1 < Vary: Accept-Encoding
 1 < X-AspNet-Version: 4.0.30319
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: ASP.NET
-<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"><CelsiusToFahrenheitResult>98.6</CelsiusToFahrenheitResult></CelsiusToFahrenheitResponse></soap:Body></soap:Envelope>
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">98.6</string>
+
+15:56:13.818 [print]
+15:56:13.818 [print] xml
+15:56:13.818 [print] 506
+15:56:13.849 [print] <string xmlns="https://www.w3schools.com/xml/">98.6</string>
+
+15:56:13.865 after scenario inside config 
+15:56:13.865 From karate-config file 
+15:56:13.880 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=40
+
+15:56:14.193 response time in milliseconds: 312.38
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:18:02 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">104</string>
+
+15:56:14.193 [print]
+15:56:14.193 [print] xml
+15:56:14.193 [print] 312
+15:56:14.193 [print] <string xmlns="https://www.w3schools.com/xml/">104</string>
+
+15:56:14.208 after scenario inside config 
+15:56:14.208 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=37
+
+15:56:14.521 response time in milliseconds: 307.62
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:18:03 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">98.6</string>
+
+15:56:14.521 [print]
+15:56:14.521 [print] xml
+15:56:14.521 [print] 308
+15:56:14.521 [print] <string xmlns="https://www.w3schools.com/xml/">98.6</string>
+
+15:56:14.521 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=40
+
+15:56:14.834 response time in milliseconds: 300.69
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:18:03 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">104</string>
+
+15:56:14.834 [print]
+15:56:14.834 [print] xml
+15:56:14.834 [print] 301
+15:56:14.834 [print] <string xmlns="https://www.w3schools.com/xml/">104</string>
+
+om/xml/"><CelsiusToFahrenheitResult>98.6</CelsiusToFahrenheitResult></CelsiusToFahrenheitResponse></soap:Body></soap:Envelope>
 
 15:21:11.833 [print] {
   "Cache-Control": [
