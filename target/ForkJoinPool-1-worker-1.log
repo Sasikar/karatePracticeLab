@@ -1,0 +1,960 @@
+18:47:03.780 From karate-config file 
+18:47:03.874 [print] from backgrounfblock
+18:47:03.874 [print] from scebarioblock
+18:47:03.874 after scenario inside config 
+18:47:03.874 from after feature 
+gent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+18:38:31.687 response time in milliseconds: 404.21
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 320
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 61c49ef1be331a62-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 04 Feb 2021 13:08:31 GMT
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=6KghiH8PvZY9gg1J0z0hbysryHWp8nWdceS7BtNZ2mqQH%2Bs3Zgm2n0cwGa9LRezzx1ZDQHqUC0dIouIggLR%2Fp%2BiAdT2o19UX0MA%3D"}],"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d964b361d81f8b22762f0be82aa2d40691612444111; expires=Sat, 06-Mar-21 13:08:31 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 080ec1ab1100001a623e952000000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+18:38:31.687 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "color": "#98B2D1",
+      "year": 2000,
+      "name": "cerulean",
+      "id": 1,
+      "pantone_value": "15-4020"
+    },
+    {
+      "color": "#C74375",
+      "year": 2001,
+      "name": "fuchsia rose",
+      "id": 2,
+      "pantone_value": "17-2031"
+    },
+    {
+      "color": "#BF1932",
+      "year": 2002,
+      "name": "true red",
+      "id": 3,
+      "pantone_value": "19-1664"
+    },
+    {
+      "color": "#7BC4C4",
+      "year": 2003,
+      "name": "aqua sky",
+      "id": 4,
+      "pantone_value": "14-4811"
+    },
+    {
+      "color": "#E2583E",
+      "year": 2004,
+      "name": "tigerlily",
+      "id": 5,
+      "pantone_value": "17-1456"
+    },
+    {
+      "color": "#53B0AE",
+      "year": 2005,
+      "name": "blue turquoise",
+      "id": 6,
+      "pantone_value": "15-5217"
+    }
+  ],
+  "page": 1,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+18:38:31.687 after scenario inside config 
+    "partition": 0,
+    "offset": 0,
+    "topic": "sasi",
+    "value": "sasi",
+    "key": "sasi"
+  },
+  {
+    "partition": 0,
+    "offset": 1,
+    "topic": "sasi",
+    "value": "wells",
+    "key": null
+  },
+  {
+    "partition": 0,
+    "offset": 2,
+    "topic": "sasi",
+    "value": 123.3,
+    "key": null
+  }
+]
+
+18:10:05.171 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:10:05.175 request:
+1 > GET http://192.168.1.62:8082/consumers/my-consumer-group/instances/sasi/assignments
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+18:10:05.181 response time in milliseconds: 5.47
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Thu, 04 Feb 2021 12:40:05 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"partitions":[{"topic":"sasi","partition":0}]}
+
+18:10:05.181 [print] {
+  "partitions": [
+    {
+      "partition": 0,
+      "topic": "sasi"
+    }
+  ]
+}
+
+18:10:05.191 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:10:05.193 request:
+1 > DELETE http://192.168.1.62:8082/consumers/my-consumer-group/instances/sasi/subscription
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+18:10:05.200 response time in milliseconds: 7.15
+1 < 204
+1 < Date: Thu, 04 Feb 2021 12:40:05 GMT
+
+18:10:05.205 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:10:05.208 request:
+1 > DELETE http://192.168.1.62:8082/consumers/my-consumer-group/instances/sasi
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+18:10:05.218 response time in milliseconds: 8.91
+1 < 204
+1 < Date: Thu, 04 Feb 2021 12:40:05 GMT
+
+18:10:05.222 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:10:05.224 request:
+1 > DELETE http://192.168.1.62:8082/consumers/my-consumer-group/instances/sasi
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+18:10:05.233 response time in milliseconds: 8.22
+1 < 404
+1 < Content-Length: 61
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Thu, 04 Feb 2021 12:40:05 GMT
+{"error_code":40403,"message":"Consumer instance not found."}
+
+      <s:key name="format">table</s:key>
+        <s:key name="from">splunk</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">mod_alert_icon_email.png</s:key>
+        <s:key name="include.results_link">1</s:key>
+        <s:key name="include.search">0</s:key>
+        <s:key name="include.trigger">0</s:key>
+        <s:key name="include.trigger_time">0</s:key>
+        <s:key name="include.view_link">1</s:key>
+        <s:key name="inline">0</s:key>
+        <s:key name="label">Send email</s:key>
+        <s:key name="mailserver">localhost</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="message.alert">The alert condition for '$name$' was triggered.</s:key>
+        <s:key name="message.report">The scheduled report '$name$' has run.</s:key>
+        <s:key name="pdf.footer_center">title</s:key>
+        <s:key name="pdf.footer_enabled">1</s:key>
+        <s:key name="pdf.footer_left">logo</s:key>
+        <s:key name="pdf.footer_right">timestamp,pagination</s:key>
+        <s:key name="pdf.header_center">description</s:key>
+        <s:key name="pdf.header_enabled">1</s:key>
+        <s:key name="pdf.html_image_rendering">1</s:key>
+        <s:key name="pdfview"></s:key>
+        <s:key name="preprocess_results"></s:key>
+        <s:key name="priority">3</s:key>
+        <s:key name="reportCIDFontList">gb cns jp kor</s:key>
+        <s:key name="reportFileName">$name$-$time:%Y-%m-%d$</s:key>
+        <s:key name="reportIncludeSplunkLogo">1</s:key>
+        <s:key name="reportPaperOrientation">portrait</s:key>
+        <s:key name="reportPaperSize">letter</s:key>
+        <s:key name="sendcsv">0</s:key>
+        <s:key name="sendpdf">0</s:key>
+        <s:key name="sendresults">0</s:key>
+        <s:key name="sslVersions">tls1.2</s:key>
+        <s:key name="subject">Splunk Alert: $name$</s:key>
+        <s:key name="subject.alert">Splunk Alert: $name$</s:key>
+        <s:key name="subject.report">Splunk Report: $name$</s:key>
+        <s:key name="to"></s:key>
+        <s:key name="track_alert">1</s:key>
+        <s:key name="ttl">86400</s:key>
+        <s:key name="useNSSubject">0</s:key>
+        <s:key name="use_ssl">0</s:key>
+        <s:key name="use_tls">0</s:key>
+        <s:key name="width_sort_columns">1</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>logevent</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent" rel="list"/>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent" rel="edit"/>
+    <link href="/servicesNS/nobody/alert_logevent/alerts/alert_actions/logevent/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"</s:key>
+        <s:key name="description">Send log event to Splunk receiver endpoint</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">alert_logevent</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">global</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">logevent.png</s:key>
+        <s:key name="is_custom">1</s:key>
+        <s:key name="label">Log Event</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="param.host"></s:key>
+        <s:key name="param.index">main</s:key>
+        <s:key name="param.source">alert:$name$</s:key>
+        <s:key name="param.sourcetype">generic_single_line</s:key>
+        <s:key name="payload_format">json</s:key>
+        <s:key name="python.version">python3</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">10p</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>lookup</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/lookup</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/lookup/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="append">0</s:key>
+        <s:key name="command">outputlookup "$action.lookup.filename$" append=$action.lookup.append$</s:key>
+        <s:key name="description">Output the results of the search to a CSV lookup file</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="filename"></s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">mod_alert_icon_lookup.png</s:key>
+        <s:key name="label">Output results to lookup</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">10p</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>outputtelemetry</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry" rel="list"/>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry" rel="edit"/>
+    <link href="/servicesNS/nobody/splunk_instrumentation/alerts/alert_actions/outputtelemetry/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command"><![CDATA[outputtelemetry input=$action.outputtelemetry.param.input$ anonymous=$action.outputtelemetry.param.anonymous$ license=$action.outputtelemetry.param.license$ support=$action.outputtelemetry.param.support$ component=$action.outputtelemetry.param.component$ type=$action.outputtelemetry.param.type$ optinrequired=$action.outputtelemetry.param.optinrequired$]]></s:key>
+        <s:key name="description">Custom action to output results to telemetry endpoint</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">splunk_instrumentation</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">global</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">outputtelemetry.png</s:key>
+        <s:key name="is_custom">1</s:key>
+        <s:key name="label">Output results to telemetry endpoint</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="param.anonymous">1</s:key>
+        <s:key name="param.component"></s:key>
+        <s:key name="param.input"></s:key>
+        <s:key name="param.license">0</s:key>
+        <s:key name="param.optinrequired">1</s:key>
+        <s:key name="param.support">1</s:key>
+        <s:key name="param.type">event</s:key>
+        <s:key name="python.version">python3</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">120</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>populate_lookup</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/populate_lookup</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/populate_lookup/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">copyresults dest="$action.populate_lookup.dest$"  sid="$search_id$"</s:key>
+        <s:key name="dest"></s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">120</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>rss</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/rss</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/rss/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">createrss "path=$name$.xml" "name=$name$" "link=$results.url$" "descr=Alert trigger: $name$, results.count=$results.count$ " "count=30" "graceful=$graceful{default=1}$" maxtime="$action.rss.maxtime{default=1m}$"</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">1m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">86400</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>script</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/script</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/script/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">runshellscript "$action.script.filename$" "$results.count$" "$search$" "$search$" "$name$" "Saved Search [$name$] $counttype$($results.count$)" "$results.url$" "$deprecated_arg$" "$search_id$" "$results.file$" maxtime="$action.script.maxtime{default=5m}$"</s:key>
+        <s:key name="description">Invoke a custom script</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="filename"></s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">mod_alert_icon_script.png</s:key>
+        <s:key name="label">Run a script</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">1</s:key>
+        <s:key name="ttl">600</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>summary_index</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/summary_index</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_index/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="_name">summary</s:key>
+        <s:key name="command"><![CDATA[summaryindex spool=t uselb=t addtime=t index="$action.summary_index._name{required=yes}$" file="$name_hash$_$#random$.stash_new" name="$name$" marker="$action.summary_index*{format=$KEY=\\\"$VAL\\\", key_regex="action.summary_index.(?!(?:command|forceCsvResults|force_realtime_schedule|inline|maxresults|maxtime|python\\.version|ttl|track_alert|(?:_.*))$)(.*)"}$"]]></s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="inline">1</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">120</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>summary_metric_index</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index" rel="list"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index" rel="edit"/>
+    <link href="/servicesNS/nobody/system/alerts/alert_actions/summary_metric_index/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="_name">summary</s:key>
+        <s:key name="command"><![CDATA[mcollect spool=t index="$action.summary_index._name{required=yes}$" file="$name_hash$_$#random$.stash_new" name="$name$" marker="$action.summary_index*{format=$KEY=\\\"$VAL\\\", key_regex="action.summary_index.(?!(?:command|forceCsvResults|force_realtime_schedule|inline|maxresults|maxtime|python\\.version|ttl|track_alert|(?:_.*))$)(.*)"}$" split=allnums $action.summary_index._metric_dims$]]></s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">system</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>admin</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">system</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="inline">1</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">120</s:key>
+      </s:dict>
+    </content>
+  </entry>
+  <entry>
+    <title>webhook</title>
+    <id>https://192.168.1.62:8089/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook</id>
+    <updated>1970-01-01T05:30:00+05:30</updated>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook" rel="list"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook" rel="edit"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"</s:key>
+        <s:key name="description">Generic HTTP POST to a specified URL</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">alert_webhook</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">global</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">webhook.png</s:key>
+        <s:key name="is_custom">1</s:key>
+        <s:key name="label">Webhook</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="param.user_agent">Splunk/$server.guid$</s:key>
+        <s:key name="payload_format">json</s:key>
+        <s:key name="python.version">python3</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">10p</s:key>
+      </s:dict>
+    </content>
+  </entry>
+</feed>
+
+
+16:31:35.218 [print] xml
+16:31:35.296 [print] alert_actions
+webhook" rel="alternate"/>
+    <author>
+      <name>nobody</name>
+    </author>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook" rel="list"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook/_reload" rel="_reload"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook" rel="edit"/>
+    <link href="/servicesNS/nobody/alert_webhook/alerts/alert_actions/webhook/disable" rel="disable"/>
+    <content type="text/xml">
+      <s:dict>
+        <s:key name="command">sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"</s:key>
+        <s:key name="description">Generic HTTP POST to a specified URL</s:key>
+        <s:key name="disabled">0</s:key>
+        <s:key name="eai:acl">
+          <s:dict>
+            <s:key name="app">alert_webhook</s:key>
+            <s:key name="can_change_perms">1</s:key>
+            <s:key name="can_list">1</s:key>
+            <s:key name="can_share_app">1</s:key>
+            <s:key name="can_share_global">1</s:key>
+            <s:key name="can_share_user">0</s:key>
+            <s:key name="can_write">1</s:key>
+            <s:key name="modifiable">1</s:key>
+            <s:key name="owner">nobody</s:key>
+            <s:key name="perms">
+              <s:dict>
+                <s:key name="read">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+                <s:key name="write">
+                  <s:list>
+                    <s:item>*</s:item>
+                  </s:list>
+                </s:key>
+              </s:dict>
+            </s:key>
+            <s:key name="removable">0</s:key>
+            <s:key name="sharing">global</s:key>
+          </s:dict>
+        </s:key>
+        <s:key name="eai:appName">search</s:key>
+        <s:key name="eai:userName">nobody</s:key>
+        <s:key name="forceCsvResults">auto</s:key>
+        <s:key name="hostname"></s:key>
+        <s:key name="icon_path">webhook.png</s:key>
+        <s:key name="is_custom">1</s:key>
+        <s:key name="label">Webhook</s:key>
+        <s:key name="maxresults">10000</s:key>
+        <s:key name="maxtime">5m</s:key>
+        <s:key name="param.user_agent">Splunk/$server.guid$</s:key>
+        <s:key name="payload_format">json</s:key>
+        <s:key name="python.version">python3</s:key>
+        <s:key name="track_alert">0</s:key>
+        <s:key name="ttl">10p</s:key>
+      </s:dict>
+    </content>
+  </entry>
+</feed>
+
+
+16:15:53.062 [print] xml
+16:15:53.077 [print] alert_actions
+ar ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 133674;
+var ezdomain = 'restapiexample.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>
+__ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js', true, [], true, false, false, false);
+var __ez_ezosuigenerisEvt = function() { if(typeof(ezosuigeneris) != 'undefined'){__ez.bit.AddAndFire(_ezaq['page_view_id'], [(new __ezDotData('universal_user_id', ezosuigeneris))]); }};
+__ez.queue.addFunc('__ez_ezosuigenerisEvt', '__ez_ezosuigenerisEvt', null, false, ['__ezf_ezosuigeneris','/detroitchicago/minneapolis.js','/detroitchicago/memphis.js'], false, false, false, false);</script><script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?nogen=1', true, ["/detroitchicago/boise.js"], true, false, false, false);</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_133674=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["74979ab8-2530-42a4-5e0f-b0d3becf3fdf", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script></head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    <script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script><script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=191-6&shcb=34', true, ['/detroitchicago/minneapolis.js'], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=191-6&shcb=34', false, [], true, false, false, false);
+</script>
+
+<script type='text/javascript' data-cfasync='false'></script></body>
+</html>
+
+
+
+<script type='text/javascript' data-cfasync='false'></script></body>
+</html>
+
+= (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script><script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=191-6&shcb=34', true, ['/detroitchicago/minneapolis.js'], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=191-6&shcb=34', false, [], true, false, false, false);
+</script>
+
+<script type='text/javascript' data-cfasync='false'></script></body>
+</html>
+
+ing on Bing","LOC_HOMEPAGE_ANSWER_FINANCE_TITLE":"My watchlist","LOC_SEARCH_USING_AN_IMAGE":"Search using an image","LOC_SEARCH_THE_WEB":"Search the web","LOC_KEYBOARD_ICON_TOOLTIP":"Search using an on-screen keyboard","LOC_HOMEPAGE_SETDEFAULTHPLINK":"Make Bing your homepage","LOC_HOMEPAGE_SETDEFAULTHPLINK_DESC_TITLE":"Experience beauty every day","LOC_HOMEPAGE_SETDEFAULTHPLINK_DESC_TEXT":"Never miss a moment and keep search at your fingertips. Just set Bing as your browser\u0027s homepage with a few easy steps!","LOC_HOMEPAGE_QS_TITLE":"Customize your homepage","LOC_HOMEPAGE_QS_TOGGLENAV":"Show menu bar","LOC_HOMEPAGE_QS_TOGGLECAROUSEL":"Show news and interests","LOC_HOMEPAGE_QS_TOGGLEIOTD":"Show homepage image","LOC_HOMEPAGE_QS_TOGGLEMVS":"Show most visited sites","LOC_HOMEPAGE_LANGUAGESWITCH_TITLETEXT":"Languages:","InPrivate":"InPrivate","LOC_HOMEPAGE_VERTICAL_SCROLL_GET_INVOLVED":"Get involved:","LOC_MODULES_AD_NEWS_TITLE":"Ad","LOC_MODULES_BREAKING_NEWS_TITLE":"BREAKING","LOC_MSB_OPTIN_TITLE":"Bing homepage for work","LOC_MSB_OPTIN_MESSAGE":"Now enhanced with the work info you need — including files, meetings, and more","LOC_MSB_OPTIN_ACCEPT":"Try it now","LOC_MSB_OPTIN_REJECT":"Skip","LOC_HOMEPAGE_WEATHER_TITLE":"Weather","LOC_HOMEPAGE_CAROUSEL_SWITCHER_INTERESTS":"My interests","LOC_ZINC_SCOPES_TITLE":"Search for","LOC_HOMEPAGE_OPALUPSELL_INSTALLCARD_TIP":"Faster and more beautiful search","LOC_HOMEPAGE_VERTICAL_SCROLL_OPAL_UPSELL_TITLE":"The Bing app: Fast, beautiful and friendly","LOC_HOMEPAGE_FOLLOW_US":"Follow us","LOC_MSB_OPTIN_TOGGLE_TITLE":"Show info from work","LOC_HOMEPAGE_COPYRIGHT_FORMAT":"© {0} Microsoft"},"HasCarousel":true,"CarouselApiUrl":"/hp/api/v1/msnpopularnow?","HasVerticalScroll":true,"CurrentIndex":0,"IsMobile":false,"ImageCropSize":"1920x1080","IsChromeNewTab":false,"IsChromeExtensionUser":false,"FormCode":"QBLH","IsBingWpAppEnabled":false,"RewardsMobileHeaderEnabled":false,"Scripts":[{"Path":"/rb/2Y/cj,nj/yMWHif5fGF8X3JTcHG0aHrh4t8E.js?bu=AWY","Postloaded":true},{"Path":"/rp/bLULVERLX4vU6bjspboNMw9vl_0.gz.js","Postloaded":true}],"Styles":[{"Path":"/rb/2Y/cir2,cc,nc/f1RHtOjQ33FtupfMppL36bou7Kw.css?bu=BNsB3gGMAq0C","Postloaded":false},{"Path":"/rp/9WzVtWmI2p2aWhfdwmHWYJTdjkw.gz.css","Postloaded":true}],"CustomFields":null,"Scopes":[{"Text":"Images","SubScopes":[],"BaseUrl":"/images?FORM=Z9LH","Id":"images","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"Videos","SubScopes":[],"BaseUrl":"/videos?FORM=Z9LH1","Id":"video","Overflow":true,"ExposeIfPossible":true,"IsDivider":false},{"Text":"Maps","SubScopes":[],"BaseUrl":"/maps?FORM=Z9LH2","Id":"local","Overflow":true,"ExposeIfPossible":false,"IsDivider":false},{"Text":"News","SubScopes":[],"BaseUrl":"/news?FORM=Z9LH3","Id":"news","Overflow":true,"ExposeIfPossible":false,"IsDivider":false},{"Text":"MSN","SubScopes":[],"BaseUrl":"//www.msn.com/?ocid=BHEA000","Id":"msn","Overflow":true,"ExposeIfPossible":false,"IsDivider":true},{"Text":"Office","SubScopes":[{"Text":"Outlook","SubScopes":[],"BaseUrl":"//outlook.com/?WT.mc_id=O16_BingHP","Id":"outlook","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"Word","SubScopes":[],"BaseUrl":"//office.live.com/start/Word.aspx?WT.mc_id=O16_BingHP","Id":"word","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"Excel","SubScopes":[],"BaseUrl":"//office.live.com/start/Excel.aspx?WT.mc_id=O16_BingHP","Id":"excel","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"PowerPoint","SubScopes":[],"BaseUrl":"//office.live.com/start/PowerPoint.aspx?WT.mc_id=O16_BingHP","Id":"powerpoint","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"OneNote","SubScopes":[],"BaseUrl":"//www.onenote.com/notebooks?WT.mc_id=O16_BingHP","Id":"onenote","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"Sway","SubScopes":[],"BaseUrl":"//sway.office.com?WT.mc_id=O16_BingHP\u0026utm_source=O16Bing\u0026utm_medium=Nav\u0026utm_campaign=HP","Id":"sway","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"OneDrive","SubScopes":[],"BaseUrl":"//onedrive.live.com/?gologin=1\u0026WT.mc_id=O16_BingHP","Id":"onedrive","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"Calendar","SubScopes":[],"BaseUrl":"//calendar.live.com/?WT.mc_id=O16_BingHP","Id":"calendar","Overflow":false,"ExposeIfPossible":false,"IsDivider":false},{"Text":"People","SubScopes":[],"BaseUrl":"//outlook.live.com/owa/?path=/people\u0026WT.mc_id=O16_BingHP","Id":"people","Overflow":false,"ExposeIfPossible":false,"IsDivider":false}],"BaseUrl":"//www.office.com?WT.mc_id=O16_BingHP","Id":"office","Overflow":true,"ExposeIfPossible":false,"IsDivider":false}],"Footer":[{"Text":"Privacy and Cookies","BaseUrl":"//go.microsoft.com/fwlink/?LinkId=521839","Id":"privacy","Overflow":false,"ExposeIfPossible":false},{"Text":"Legal","BaseUrl":"//go.microsoft.com/fwlink/?LinkID=246338","Id":"legal","Overflow":false,"ExposeIfPossible":false},{"Text":"Advertise","BaseUrl":"//go.microsoft.com/fwlink/?linkid=868923","Id":"","Overflow":false,"ExposeIfPossible":false},{"Text":"About our ads","BaseUrl":"//go.microsoft.com/fwlink/?LinkID=286759","Id":"","Overflow":false,"ExposeIfPossible":false},{"Text":"Help","BaseUrl":"//go.microsoft.com/fwlink/?LinkID=617297","Id":"help","Overflow":false,"ExposeIfPossible":false},{"Text":"Feedback","BaseUrl":"#","Id":"sb_feedback","Overflow":false,"ExposeIfPossible":false}],"RtlLang":false,"Market":"en-IN","SupportedLanguages":[{"Name":"हिंदी","Url":"/?setmkt=en-in\u0026setlang=hi"},{"Name":"ಕನ್ನಡ","Url":"/?setmkt=en-in\u0026setlang=kn"},{"Name":"বাংলা","Url":"/?setmkt=en-in\u0026setlang=bn"},{"Name":"मराठी","Url":"/?setmkt=en-in\u0026setlang=mr"},{"Name":"తెలుగు","Url":"/?setmkt=en-in\u0026setlang=te"},{"Name":"தமிழ்","Url":"/?setmkt=en-in\u0026setlang=ta"},{"Name":"ગુજરાતી","Url":"/?setmkt=en-in\u0026setlang=gu"},{"Name":"മലയാളം","Url":"/?setmkt=en-in\u0026setlang=ml"},{"Name":"ਪੰਜਾਬੀ","Url":"/?setmkt=en-in\u0026setlang=pa"}],"SymbolOfSolidarity":null,"UserType":"","MultiLangKeyboardEnabled":false,"Features":{"MicEnabled":"false","IdentityHeaderVNext":"false"},"InPrivate":false,"OriginalUrl":"https://www.bing.com:443/"}; var _vs = { sboxtgt: "", anon: false, locstr:{ wait:"Waiting...", listen:"Listening...", block:"Microphone permissions denied, check browser settings.", mictt:"Search using voice", error:"There was a problem detecting audio.", notext:"No speech was detected.", blockedtitle:"Microphone blocked", blockeddesc:"This page has been blocked from accessing your microphone.", blockedfix:"To allow Bing to access your microphone, click on the blocked microphone icon.", blockeddismiss:"Dismiss", nomic:"No microphone device was found.", nomicLinkText:"Setting up a microphone", nomicQuery:"Set up microphone", overlayText:"Click \u0022Allow\u0022 to enable voice search"}, mobile: false, reopenmic: false, usegif: false, ttsFromSsmlEnabled: false, permRequestOverlayEnabled: false }; var si_ST = new Date(); _G.AppVer ="18531266"; _G.Mkt = "en-IN"; var _H = { mkt: "en-IN", hpqs: 1, hpvn: 1, feature: "hp" };;var _w=window,_d=document,sb_ie=window.ActiveXObject!==undefined,sb_i6=sb_ie&&!_w.XMLHttpRequest,_ge=function(n){return _d.getElementById(n)},_qs=function(n,t){return t=typeof t=="undefined"?_d:t,t.querySelector?t.querySelector(n):null},sb_st=function(n,t){return setTimeout(n,t)},sb_rst=sb_st,sb_ct=function(n){clearTimeout(n)},sb_gt=function(){return(new Date).getTime()},sj_gx=function(){return sb_i6?new ActiveXObject("MSXML2.XMLHTTP"):new XMLHttpRequest};_w.sj_ce=function(n,t,i){var r=_d.createElement(n);return t&&(r.id=t),i&&(r.className=i),r};_w.sj_cook=_w.sj_cook||{get:function(n,t){var i=_d.cookie.match(new RegExp("\\b"+n+"=[^;]+")),r;return t&&i?(r=i[0].match(new RegExp("\\b"+t+"=([^&]*)")),r?r[1]:null):i?i[0]:null}};_w.sk_merge||(_w.sk_merge=function(n){_d.cookie=n});_w.bbe="A:rms:answers:Shared:BingCore.Bundle";var amd,define,require;(function(n){function e(n,i,u){t[n]||(t[n]={dependencies:i,callback:u},r(n))}function r(n){if(n){if(n)return u(n)}else{if(!f){for(var r in t)u(r);f=!0}return i}}function u(n){var s,e;if(i[n])return i[n];if(t.hasOwnProperty(n)){var h=t[n],f=h.dependencies,l=h.callback,a=r,o={},c=[a,o];if(f.length<2)throw"invalid usage";else if(f.length>2)for(s=f.slice(2,f.length),e=0;e<s.length;e++)c.push(u(s[e]));return l.apply(this,c),i[n]=o,o}}var t={},i={},f=!1;n.define=e;n.require=r})(amd||(amd={}));define=amd.define;require=amd.require;/*!DisableJavascriptProfiler*/
+0;
+;define("fallback",["require","exports"],function(n,t){function f(){return function(){for(var r,h,c,t=[],n=0;n<arguments.length;n++)t[n]=arguments[n];if(r=s(arguments.callee),u&&(h=e(r),h.toString()!=f().toString()))return h.apply(null,arguments);c=i[r].q;t[0]==="onPP"&&o();c.push(t)}}function s(n){for(var t in i)if(i[t].h===n)return t}function e(n,t){for(var u,e=n.split("."),i=_w,r=0;r<e.length;r++)u=e[r],typeof i[u]=="undefined"&&t&&(i[u]=r===e.length-1?f():{}),i=i[u];return i}function o(){var e=i["rms.js"].q,o,f,r,n,s,u,t;if(e.length>0)for(o=!1,f=0;f<e.length;f++){for(r=e[f],n=0;n<r.length;n++)if(s=_w.bbe,u=r[n][s],u||(u=r[n]["A:rmsBu0"]),u){t=_d.createElement("script");t.setAttribute("data-rms","1");t.setAttribute("crossorigin","anonymous");t.src=u;t.type="text/javascript";setTimeout(function(){_d.body.appendChild(t)},0);r.splice(n,1);o=!0;break}if(o)break}}function h(){var n,t,f;for(u=!1,n=0;n<r.length;n++)t=r[n],f=e(t,!0),i[t]={h:f,q:[]}}function c(){for(var t,n=0;n<r.length;n++){var o=r[n],s=i[o].q,h=e(o);for(t=0;t<s.length;t++)h.toString()!==f().toString()&&h.apply(null,s[t])}u=!0}function l(n,t,i,r){n&&((n===_w||n===_d||n===_d.body)&&t=="load"?_w.sj_evt.bind("onP1",i,!0):n.addEventListener?n.addEventListener(t,i,r):n.attachEvent?n.attachEvent("on"+t,i):n["on"+t]=i)}t.__esModule=!0;t.replay=void 0;var r=["rms.js","sj_evt.bind","sj_evt.fire","sj_jb","sj_wf","sj_cook.get","sj_cook.set","sj_pd","sj_sp","sj_be","sj_go","sj_ev","sj_ue","sj_evt.unbind","sj_et","Log.Log","sj_mo","sj_so"],i={},u=!1;_w.fb_is=o;t.replay=c;h();_w.sj_be=l});function lb(){_w.si_sendCReq&&sb_st(_w.si_sendCReq,800);_w.lbc&&_w.lbc()};(function(){function n(n){n=sb_ie?_w.event:n;(!n.altKey||n.ctrlKey||n.shiftKey)&&(n.key&&n.key==="Enter"||n.keyCode&&n.keyCode===13)&&_w.si_ct(sb_ie?n.srcElement:n.target,!1,n,"enter")}sj_be(document,"keydown",n,!1)})();(function(){function n(n){_w.si_ct(sb_ie?_w.event.srcElement:n.target,!1,_w.event||n)}sj_be(document,"mousedown",n,!1)})();/*!DisableJavascriptProfiler*/
+0;/*!DisableJavascriptProfiler*/
+0;ClTrCo={};var ctcc=0,clc=_w.ClTrCo||{};_w.si_ct=function(n,t,i,r){var u,e,f,o,s,h,c;if(clc.SharedClickSuppressed)return!0;u="getAttribute";try{for(;n!==document.body;n=n.parentNode){if(!n||n===document||n[u]("data-noct"))break;if(e=(n.tagName==="A"||n[u]("data-clicks"))&&(n[u]("h")||n[u]("data-h"))||n[u]("_ct"),e){f=n[u]("_ctf");o=-1;i&&(i.type==="keydown"?o=-2:i.button!=null&&(o=i.button));f&&_w[f]||(f="si_T");f==="si_T"&&(s=encodeURIComponent(n[u]("href")),clc.furl&&!n[u]("data-private")?e+="&url="+s:clc.mfurl&&(e+="&abc="+s));r&&(e+="&source="+r);h="";clc.mc&&(h="&c="+ctcc++);c="&"+e+h;_w.si_sbwu(c)||_w[f]&&_w[f](c,n,i,o);break}if(t)break}}catch(l){_w.SharedLogHelper?SharedLogHelper.LogWarning("clickEX",null,l):(new Image).src=_G.lsUrl+'&Type=Event.ClientInst&DATA=[{"T":"CI.Warning","FID":"CI","Name":"JSWarning","Text":'+l.message+"}]"}return!0};_w.si_sbwu||(_w.si_sbwu=function(){return!1}),function(){_w._G&&(_G.si_ct_e="click")}();var perf;(function(n){function f(n){return i.hasOwnProperty(n)?i[n]:n}function e(n){var t="S";return n==0?t="P":n==2&&(t="M"),t}function o(n){for(var c,i=[],t={},r,l=0;l<n.length;l++){var a=n[l],o=a.v,s=a.t,h=a.k;s===0&&(h=f(h),o=o.toString(36));s===3?i.push(h+":"+o):(r=t[s]=t[s]||[],r.push(h+":"+o))}for(c in t)t.hasOwnProperty(c)&&(r=t[c],i.push(e(+c)+':"'+r.join(",")+'"'));return i.push(u),i}for(var r=["redirectStart","redirectEnd","fetchStart","domainLookupStart","domainLookupEnd","connectStart","secureConnectionStart","connectEnd","requestStart","responseStart","responseEnd","domLoading","domInteractive","domContentLoadedEventStart","domContentLoadedEventEnd","domComplete","loadEventStart","loadEventEnd","unloadEventStart","unloadEventEnd","firstChunkEnd","secondChunkStart","htmlEnd","pageEnd","msFirstPaint"],u="v:1.1",i={},t=0;t<r.length;t++)i[r[t]]=t;n.compress=o})(perf||(perf={}));window.perf=window.perf||{},function(n){n.log=function(t,i){var f=n.compress(t),r;f.push('T:"CI.Perf",FID:"CI",Name:"PerfV2"');var e="/fd/ls/lsp.aspx?",o="sendBeacon",h="<E><T>Event.ClientInst<\/T><IG>"+_G.IG+"<\/IG><TS>"+i+"<\/TS><D><![CDATA[{"+f.join(",")+"}]\]><\/D><\/E>",s="<ClientInstRequest><Events>"+h+"<\/Events><STS>"+i+"<\/STS><\/ClientInstRequest>",u=!_w.navigator||!navigator[o];if(!u)try{navigator[o](e,s)}catch(c){u=!0}u&&(r=sj_gx(),r.open("POST",e,!0),r.setRequestHeader("Content-Type","text/xml"),r.send(s))}}(window.perf),function(n){function a(){return c(Math.random()*1e4)}function o(){return y?c(f.now())+l:+new Date}function v(n,r,f){t.length===0&&i&&sb_st(u,1e3);t.push({k:n,v:r,t:f})}function p(n){return i||(r=n),!i}function w(n,t){t||(t=o());v(n,t,0)}function b(n,t){v(n,t,1)}function u(){var u,f;if(t.length){for(u=0;u<t.length;u++)f=t[u],f.t===0&&(f.v-=r);t.push({k:"id",v:e,t:3});n.log(t,o());t=[];i=!0}}function k(){r=o();e=a();i=!1;sj_evt.bind("onP1",u)}var s="performance",h=!!_w[s],f=_w[s],y=h&&!!f.now,c=Math.round,t=[],i=!1,l,r,e;h?l=r=f.timing.navigationStart:r=_w.si_ST?_w.si_ST:+new Date;e=a();n.setStartTime=p;n.mark=w;n.record=b;n.flush=u;n.reset=k;sj_be(window,"load",u,!1);sj_be(window,"beforeunload",u,!1)}(perf||(perf={}));_w.si_PP=function(n,t,i){var r,o,l,h,e,c;if(!_G.PPS){for(o=["FC","BC","SE","TC","H","BP",null];r=o.shift();)o.push('"'+r+'":'+(_G[r+"T"]?_G[r+"T"]-_G.ST:-1));var u=_w.perf,s="navigation",r,f=i||_w.performance&&_w.performance.timing;if(f&&u){if(l=f.navigationStart,u.setStartTime(l),l>=0)for(r in f)h=f[r],typeof h=="number"&&h>0&&r!=="navigationStart"&&r!==s&&u.mark(r,h);u.record("nav",s in f?f[s]:performance[s].type)}e="connection";c="";_w.navigator&&navigator[e]&&(c=',"net":"'+navigator[e].type+'"',navigator[e].downlinkMax&&(c+=',"dlMax":"'+navigator[e].downlinkMax+'"'));_G.PPImg=new Image;_G.PPImg.src=_G.lsUrl+'&Type=Event.CPT&DATA={"pp":{"S":"'+(t||"L")+'",'+o.join(",")+',"CT":'+(n-_G.ST)+',"IL":'+_d.images.length+"}"+(_G.C1?","+_G.C1:"")+c+"}"+(_G.P?"&P="+_G.P:"")+(_G.DA?"&DA="+_G.DA:"")+(_G.MN?"&MN="+_G.MN:"");_G.PPS=1;sb_st(function(){u&&u.flush();sj_evt.fire("onPP");sj_evt.fire(_w.p1)},1)}};_w.onbeforeunload=function(){si_PP(new Date,"A")};sj_evt.bind("ajax.requestSent",function(){window.perf&&perf.reset()}),function(n,t){onload=function(){_G.BPT=new Date;n&&n();!_w.sb_ppCPL&&t&&sb_st(function(){t(new Date)},0)}}(_w.onload,_w.si_PP);var PostloadResources=function(){function n(){this.addStyles=function(n){var t=document.head||document.documentElement.childNodes[0];t&&n.forEach(function(n){if(n){var i=document.createElement("link");i.rel="stylesheet";i.href=n;t.appendChild(i)}})};this.addStyles(_model.Styles.map(function(n){return n.Postloaded?n.Path:null}))}return n}();addEventListener("load",function(){new PostloadResources});0;(function(){function t(n,t,i){typeof Log!="undefined"&&Log.Log&&Log.Log(n,t,i)}function s(n){var i="W",r=1213.9,u=1109;n>r&&n<=1301.9?i="M":n>u&&n<=r?i="N":n<=u&&(i="S");t("Info","BRW",i)}function f(){var r=_w.innerWidth,f,o,c,l,a,i;s(r);h(_w.location.href)||(f=sj_cook.get(n,"CW"),o=r.toString(),f&&f===o||sj_cook.set(n,"CW",o,!0,"/",null),c=sj_cook.get(n,"CH"),l=_d.documentElement.clientHeight.toString(),c&&c===l||sj_cook.set(n,"CH",l,!0,"/",null),u&&(a=_w.TPane,i=e(r),i!=a&&(t("Info","TPResize",a+i),_w.TPane=i)))}function h(n){return n.match(/\/images\/search.*[?&]view=detailv2.*nocookie=1\b/i)!=null}function c(){var u=sj_cook.get(n,"DPR"),t=_w.devicePixelRatio,i,r;t&&(!u||parseInt(u)!==t)&&sj_cook.set(n,"DPR",t.toString(),!0,"/",null);i=sj_cook.get(n,"UTC");r=((new Date).getTimezoneOffset()*-1).toString();(i==null||i!==r)&&sj_cook.set(n,"UTC",r,!0,"/",null)}function l(){f();c();u=_ge("b_context")!=null;u&&(_w.TPane=e(_w.innerWidth));o()}function e(n){return n<=1193?"N":n<=1281?"M":"W"}function i(i,r){i!=r&&(t("Info","DM",r),_w.DMMode=r);sj_cook.get(n,"DM")!=r&&sj_cook.set(n,"DM",r,!0,"/",null)}function r(n,t,r){var u="(prefers-color-scheme: "+n+")";return _w.matchMedia(u).matches?(t!=r&&i(t,r),!0):!1}function o(){_w.getComputedStyle&&_w.getComputedStyle(_d.documentElement,null).getPropertyValue("background-color").replace(/\s/g,"")!="rgb(255,255,255)"&&t("Info","Mutation","1");var n=_w.DMMode;_w.matchMedia?r("light",n,"0")||r("dark",n,"1")||r("no-preference",n,"2")||i(n,"3"):i(n,"4")}var n="SRCHHPGUSR",u=!1;l();sj_be(_w,"resize",f);sj_be(_d,"visibilitychange",function(){_d.visibilityState==="visible"&&o()})})();0;0;sa_config={"f":"sb_form","i":"sb_form_q","c":"sw_as","u":"%2fAS%2fSuggestions%3fpt%3dpage.home%26mkt%3den-in%26qry%3d","removeSuggUrl":"/historyHandler?oma=delete_matching_queries\u0026qt=%7b0%7d\u0026sig=15A484D4B7066E4106478B06B69D6FB0\u0026response=json\u0026FORM=ASRMHS","searchHistoryUrl":"/profile/history?FORM=ASRMHP","enabledDataSources":["Web"],"eHC":1,"fetchOnEmpty":1,"fetchOnDownArrowKey":1,"t":1,"ol":1,"eNw":1,"nwRz":1,"nwLim":1,"handleDuplicateFetch":1,"d":100,"removeTextLength":49};sa_loc= {"Suggestions":"Suggestions","SearchRemoved":"This search was removed from your %eSearch history%E"};;sa_loader=function(){_w.rms.js({'rms:answers:AutoSuggest:AutoSug':'\/rp\/yae68lhvyWfeIRn7NoqxEa14I7A.gz.js',d:1});};;var sa_eL=!1;(function(){function e(n,t,i){n&&sj_ue(n,t,e);sa_eL=sa_eL||i;f||(f=!0,sj_evt.fire("AS.bootload",n),sa_loader())}function u(n,t,i){sj_be(n,t,function(r){e(n,t,i,sj_ev(r))})}var i=sa_config,n=_ge(i.i),t,r,f;if(n.setAttribute("autocomplete","off"),t=_ge(i.c),!t){if(r=_ge("sa_qs")||n,!r)throw new Error("AS init failed");t=sj_ce("div");t.id=i.c;_ge("sb_form_q").nodeName==="TEXTAREA"?r.parentNode&&r.parentNode.parentNode.appendChild(t):r.parentNode.appendChild(t);n.setAttribute("aria-controls",i.c)}f=!1;_w.sa_loader&&("ontouchend"in _w&&u(n,"touchend",!0),u(n,"click",!0),u(n,"keydown",!0),i.ol&&u(_w,"load",!1))})();(function() { sj_evt.bind("OnBnpLoaded",Req,1); function Req(){ if(Bnp===void(0)) return; if(Bnp.Global){ Bnp.Global.RawRequestURL="/"; Bnp.Global.Referer=null; } var r = new Bnp.Partner.Request("HomePage"); r.IID="Bnp"; r.Submit(); } })();;var ipd = { ipt: "4", secall: true, pd: true };sj_evt.bind('onP1', function () {_w.rms.js({'rms:answers:VisualSystem:IPv6TestOnDemand':'\/rp\/eaMqCdNxIXjLc0ATep7tsFkfmSA.gz.js',d:1});}, 1);;var BM=BM||{};(function(n){function u(n,u){n in t||(t[n]=[]);!u.compute||n in r||(r[n]=u.compute);!u.unload||n in i||(i[n]=u.unload);u.load&&u.load()}function f(n,i){t[n].push({t:s(),i:i})}function e(n){return n in i&&i[n](),n in t?t[n]:void 0}function o(){for(var n in r)r[n]()}function s(){return window.performance&&performance.now?Math.round(performance.now()):new Date-window.si_ST}var t={},i={},r={};n.wireup=u;n.enqueue=f;n.dequeue=e;n.trigger=o})(BM);var Identity; (function(Identity) { Identity.sglid =false; Identity.orgIdPhotoUrl ="https://business.bing.com/api/v3/search/person/photo?id={0}"; })(Identity || (Identity = {}));;var Identity = Identity || {}; (function(i) { i.wlImgSm ="https://storage.live.com/users/0x{0}/myprofile/expressionprofile/profilephoto:UserTileStatic/p?ck=1\u0026ex=720\u0026sid=15A484D4B7066E4106478B06B69D6FB0\u0026fofoff=1"; i.wlImgLg ="https://storage.live.com/users/0x{0}/myprofile/expressionprofile/profilephoto:UserTileMedium/p?ck=1\u0026ex=720\u0026sid=15A484D4B7066E4106478B06B69D6FB0\u0026fofoff=1";i.popupLoginUrls = {"WindowsLiveId":"https://login.live.com/login.srf?wa=wsignin1.0\u0026rpsnv=11\u0026ct=1612268618\u0026rver=6.0.5286.0\u0026wp=MBI_SSL\u0026wreply=https:%2F%2fwww.bing.com%2Fsecure%2FPassport.aspx%3Fpopup%3D1%26ssl%3D1\u0026lc=16393\u0026id=264960"}; })(Identity);;FallBackToDefaultProfilePic = function (e) { var new_element = document.createElement('span'); new_element.setAttribute('id', 'id_p'); new_element.setAttribute('class', 'sw_spd id_avatar'); new_element.setAttribute('aria-label', "Default Profile Picture"); var p = e.parentNode; p.replaceChild(new_element, e); };var wlc_d =10, wlc_t =63747865418, wlc_wfa =false;;var BingAtWork;(function(n){var t;(function(n){n.fetchLowerHeader=function(n){sj_ajax("/business/lowerheader?q="+n,{callback:function(n,t){var u,r,i,f;n&&(u=_ge("b_content"),u&&(r=u.getElementsByTagName("main"),r&&r.length>0&&(i=r[0],i&&i.hasChildNodes()&&(f=sj_ce("div","b_lowerHeader"),t.appendTo(f),i.insertBefore(f,i.firstChild)))))}})};n.fetchScopeBar=function(n){sj_ajax("/header/scopebar?q="+n,{callback:function(n,t){var i,r,u,f;n&&(i=_ge("b_header"),i&&(r=i.getElementsByTagName("nav"),r&&r.length>0&&(u=r[0],u&&(f=sj_ce("div","b_nav"),t.appendTo(f),i.removeChild(u),i.appendChild(f)))))}})};n.fetchNotificationConditional=function(){sj_ajax("/business/notification/conditional",{callback:function(n,t){n&&t.appendTo(_d.body)}})};n.raiseAuthEventAndLog=function(n){var i=n.isAuthenticated,r=n.postUserNameInMessage,u=n.displayName,f=n.uniqueName,e=n.userObjectId,t;if(!i){sj_evt.fire("aad:signedout");return}t={displayName:u,uniqueName:f,userObjectId:e};r?sj_evt.fire("aad:signedin",t):sj_evt.fire("aad:signedin");Log&&Log.Log&&Log.Log("ClientInst","AADSignedIn","OrgId",!1,"Type","Conditional","TimeStamp",Math.round(performance.now()).toString())}})(t=n.ConditionalSignIn||(n.ConditionalSignIn={}))})(BingAtWork||(BingAtWork={}));var ham_js_downloaded=!1,sch=sch||{};(function(){function n(){if(!ham_js_downloaded){var n=document.createElement("script");n.src="/sj_jb/HamburgerServicesHeaderFlyout_c.js";n.type="text/javascript";document.head.appendChild(n);ham_js_downloaded=!0}}var t="click";sj_evt.bind("onP1",function(){setTimeout(function(){var r=_ge("id_h"),i=_ge("id_sc");r&&i&&(sj_be(r,"mouseover",n),sj_be(i,"focus",n),sj_be(i,t,function(t){sch.clk=t;n()}))},50)},1)})();_w.rms.js({'A:0':0},{'A:rms:answers:Shared:BingCore.Bundle':'\/rp\/fOTa3tS0UbBigvRZgJotvLqABI4.gz.js'},{'A:rms:answers:HomepageVNext:PreactLibrary':'\/rp\/r4y8-SDuiyUVmqJha9WaK4k6vLY.gz.js'},{'A:rms:answers:HomepageVNext:PreactBundle':'\/rp\/-fUcmSUZeg0P6-H-Gt_MH5KQwpg.gz.js'},{'A:rms:answers:HomepageVNext:OutlinePolyfill':'\/rp\/hqx6FcD0hjfzrON5oLgx2RMMD1s.gz.js'},{'A:rms:answers:HomepageVNext:SpeechSDK':'\/rp\/GiGr-rA9TBhE2c3LJn7PvDweiOo.gz.js'},{'A:rms:answers:Notifications:BnpPartner':'\/rp\/swyt_VnIjJDWZW5KEq7a8l_1AEw.gz.js'},{'A:rms:answers:HomepageVNext:PostloadedBundlePreact':'\/rp\/bLULVERLX4vU6bjspboNMw9vl_0.gz.js'},{'A:rms:answers:Feedback:FeedbackAccessibility':'\/rp\/RXZtj0lYpFm5XDPMpuGSsNG8i9I.gz.js'},{'A:1':1},{'A:rms:answers:Feedback:FeedbackBootstrapBundle':'\/rp\/RrvsBuqGHDpqG7NAz4Q0BMOqQBg.gz.js'},{'A:2':2},{'A:rms:answers:BoxModel:Rules':'\/rp\/MDr1f9aJs4rBVf1F5DAtlALvweY.gz.js'},{'A:3':3},{'A:rms:answers:BoxModel:ViewportQueue':'\/rp\/hceflue5sqxkKta9dP3R-IFtPuY.gz.js'},{'A:rms:answers:BoxModel:LayoutQueue':'\/rp\/a282eRIAnHsW_URoyogdzsukm_o.gz.js'},{'A:rms:answers:BoxModel:EventQueue':'\/rp\/svI82uPNFRD54V4bMLaeahXQXBI.gz.js'},{'A:rms:answers:BoxModel:Framework':'\/rp\/4o2wewBzElZWo-1rBolPvZZE7y0.gz.js'},{'A:4':4},{'A:rms:answers:Shared:ShareDialogBootstrapBundle':'\/rp\/PA3TC2iNXZkiG2C3IJp5VAvC_yY.gz.js'},{'A:rms:answers:Identity:BlueIdentityDropdownBootStrap':'\/rp\/P3LN8DHh0udC9Pbh8UHnw5FJ8R8.gz.js'},{'A:rms:answers:Identity:BlueIdentityHeader':'\/rp\/n8-O_KIRNSMPFWQWrGjn0BRH6SM.gz.js'},{'A:5':5},{'A:rms:answers:Identity:SnrWindowsLiveConnectBootstrap':'\/rp\/ozS3T0fsBUPZy4zlY0UX_e0TUwY.gz.js'},{'A:rms:answers:OrgId:SsoFrame':'\/rp\/Xp-HPHGHOZznHBwdn7OWdva404Y.gz.js'},{'A:rms:answers:BingAtWork:SsoContent':'\/rp\/FvkosEDIbuCPhD1mwLAN-LJ7Coc.gz.js'},{'A:6':6},{'A:rms:answers:Identity:ProfilePicturePostLoader':'\/rp\/MstqcgNaYngCBavkktAoSE0--po.gz.js'});;
+//]]></script><div id="aRmsDefer"><script type="text/rms">//<![CDATA[
+var mcp_banner=function(n){function i(n){var t=sj_gx(),i,e;if(t.open("GET",n,!0),t.onreadystatechange=function(){var i,n,e,o,s;if(t.readyState==4&&t.status==200){if(i=t.responseText,i.length==0)return;n=sj_ce("div");n.setAttribute("class","footer_mcp");e=[];o=i.replace(/<style\s+[^>]+>([^<]*)<\/style>/g,function(n,t){return e.push(t),""});n.innerHTML="<div>dummy<\/div>"+o;s=r(n);n.removeChild(n.firstChild);_d.body.insertBefore(n,_d.body.firstChild);f(e);u(s)}},i=_d.getElementsByClassName("mcp_container")[0],e=i&&i.getAttribute("class")||"",e=="mcp_container"&&i.style.display=="none"){i.style.removeProperty("display");return}t.send()}function r(n){for(var r=[],u=n.getElementsByTagName("script"),t,i;u.length;)t=u[0],i=sj_ce("script"),t.src?i.src=t.src:t.text&&(i.text=t.text),i.type=t.type,t.parentNode.removeChild(t),r.push(i);return r}function u(n){for(var i=0;i<n.length;i++)t(n[i])}function t(n){var t=_d.getElementsByTagName("head")[0];t.appendChild(n)}function f(n){for(var i,r=0;r<n.length;r++)i=sj_ce("style"),i.type="text/css",i.textContent!==undefined?i.textContent=n[r]:i.style.cssText=n[r],t(i)}var e=n+"?&IG="+_G.IG+"&IID=MCP.302";i(e)};
+//]]></script><script type="text/rms">//<![CDATA[
+var sj_appHTML=function(n,t){var f,e,o,i,r,s,h;if(t&&n){var c="innerHTML",l="script",a="appendChild",v="length",y="src",p=sj_ce,u=p("div");if(u[c]="<br>"+t,f=u.childNodes,u.removeChild(f[0]),e=u.getElementsByTagName(l),e)for(o=0;o<e[v];o++)i=p(l),r=e[o],r&&(i.type="text/javascript",s=r.getAttribute(y),s?(i.setAttribute(y,s),i.setAttribute("crossorigin","anonymous")):(i.text=r[c],i.setAttribute("data-bing-script","1")),r.parentNode.replaceChild(i,r));for(h=_d.createDocumentFragment();f[v];)h[a](f[0]);n[a](h)}};var sj_ajax=function(n,t){function c(){i[u]=h;i.abort&&i.abort()}function s(n,t){typeof n=="function"&&n(t,{request:i,appendTo:function(n){i&&sj_appHTML(n,i.responseText)}})}var r,i=sj_gx(),u="onreadystatechange",f,e=null,o,l=sb_st,a=sb_ct,h=function(){};if(!n||!i){s(r,!1);return}i.open("get",n,!0);t&&(r=t.callback,f=t.timeout,o=t.headers,Object.keys(o||{}).forEach(function(n){i.setRequestHeader(n,o[n])}));i[u]=function(){if(i.readyState===4){var n=!1;e!==null&&a(e);i.status===200&&(n=!0,i[u]=h);s(r,n)}};sj_evt.bind("ajax.unload",c);i.send();f>0&&(e=l(function(){c();s(r,!1)},f))};
+//]]></script><script type="text/rms">//<![CDATA[
+Feedback.Bootstrap.InitializeFeedback({page:true},"sb_feedback",1,0,0);;
+//]]></script><script type="text/rms">//<![CDATA[
+BM.trigger();
+//]]></script><script type="text/rms">//<![CDATA[
+var ShareDialogConfig ={"shareDialogUrl":"/shared/sd/?IID=SERP.5033"};;
+//]]></script><script type="text/rms">//<![CDATA[
+var wlc=function(n,t,i){var u,f,r;n&&Identity&&(u=Identity.popupLoginUrls)&&(f=u.WindowsLiveId)&&Identity.wlProfile&&(r=_d.createElement("iframe"),r.style.display="none",r.src=f+"&checkda=1",r.setAttribute("data-priority","2"),_d.body.appendChild(r),i&&t&&t("SRCHHPGUSR","WTS",i,1,"/"))};
+//]]></script><script type="text/rms">//<![CDATA[
+(function() { var conditionalSignInParams ={"notifEnabled":false,"notifFetchAsync":false}; BingAtWork.ConditionalSignIn && BingAtWork.ConditionalSignIn.bindToConditionalSignIn && BingAtWork.ConditionalSignIn.bindToConditionalSignIn(conditionalSignInParams); })();;(function() { var config ={"url":"https%3a%2f%2flogin.microsoftonline.com%2fcommon%2foauth2%2fauthorize%3fclient_id%3d9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7%26response_type%3did_token%2bcode%26nonce%3d554b096a-ffae-4e5c-a69d-2cb10ba5c29c%26redirect_uri%3dhttps%253a%252f%252fwww.bing.com%252forgid%252fidtoken%252fconditional%26scope%3dopenid%26response_mode%3dform_post%26msafed%3d0%26prompt%3dnone%26state%3d%257b%2522ig%2522%253a%2522688C00413D6D4671822E6EF48249F573%2522%257d","sandbox":"allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts","currentEpoch":"1612268618000"}; sj_evt.fire('ssoFrameExists', config); })();;
+//]]></script></div></body></html>
+
+17:53:38.270 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.

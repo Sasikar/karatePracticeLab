@@ -1,0 +1,18 @@
+<testsuite failures="0" name="Featurefiles/DBTest1.feature" skipped="0" tests="2" time="0.483431">
+  <testcase classname="Featurefiles.DBTest1" name="select stmt test case" time="0.445657">
+    <system-out>* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="Featurefiles.DBTest1" name="insert stmt test case" time="0.037775">
+    <system-out>* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed
+* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def res = db.insertStatement("Insert into tools values(106,'Sasi','Sasi')") . passed
+* print res ............................................................... passed
+* match res == 'Success' .................................................. passed</system-out>
+  </testcase>
+</testsuite>

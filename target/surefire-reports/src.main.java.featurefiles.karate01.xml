@@ -1,0 +1,9 @@
+<testsuite failures="1" name="src/main/java/featurefiles/karate01.feature" skipped="0" tests="1" time="0">
+  <testcase classname="src.main.java.featurefiles.karate01" name="Karate TestCase1" time="0">
+    <failure message="karate01.feature:4 - failed to construct class by name: karate-http.properties not found, aborting">* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate01.feature:4 - failed to construct class by name: karate-http.properties not found, aborting&#13;
+	at ✽.* scenario init failed (karate01.feature:4)</failure>
+  </testcase>
+</testsuite>

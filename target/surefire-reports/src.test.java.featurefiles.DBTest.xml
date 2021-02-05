@@ -1,0 +1,6 @@
+<testsuite failures="0" name="src/test/java/featurefiles/DBTest.feature" skipped="0" tests="1" time="0.021082">
+  <testcase classname="src.test.java.featurefiles.DBTest" name="static method TC" time="0.021082">
+    <system-out>* def env2 = .............................................................. passed
+* print env2() ............................................................ passed</system-out>
+  </testcase>
+</testsuite>

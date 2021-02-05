@@ -1,0 +1,17 @@
+<testsuite failures="1" name="featurefiles/karate10.feature" skipped="0" tests="1" time="1.037207">
+  <testcase classname="featurefiles.karate10" name="rest api TestCase1" time="1.037207">
+    <failure message="karate10.feature:9 - evaluation (js) failed: resposeType, javax.script.ScriptException: ReferenceError: &quot;resposeType&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given url "http://dummy.restapiexample.com/api/v1/employees" .............. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* match resposeType == "json" ............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate10.feature:9 - evaluation (js) failed: resposeType, javax.script.ScriptException: ReferenceError: "resposeType" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match resposeType == "json" (karate10.feature:9)&#13;
+
+* match response.status == "success" ...................................... skipped
+* match response.data[0].employee_name == "Tiger Nixon" ................... skipped
+* match status  == "#string" .............................................. skipped</failure>
+  </testcase>
+</testsuite>

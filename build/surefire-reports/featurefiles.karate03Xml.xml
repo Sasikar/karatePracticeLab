@@ -1,0 +1,148 @@
+<testsuite failures="4" name="featurefiles/karate03Xml.feature" skipped="0" tests="5" time="0.023842">
+  <testcase classname="featurefiles.karate03Xml" name="Karate Json TestCase1" time="0.011172">
+    <system-out>Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml\info\id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.karate03Xml" name="Karate Json TestCase3" time="0.001173">
+    <failure message="karate03Xml.feature:15 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;&#10;xml\info\id&#13;&#10;   ^ in &lt;eval&gt; at line number 1 at column number 3&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml\info\id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:15 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:15)&#13;
+
+* match xml.info.tool.name == "Karate" .................................... skipped</failure>
+  </testcase>
+  <testcase classname="featurefiles.karate03Xml" name="Karate Json TestCase4" time="0.00108">
+    <failure message="karate03Xml.feature:21 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;&#10;xml\info\id&#13;&#10;   ^ in &lt;eval&gt; at line number 1 at column number 3&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml\info\id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:15 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:15)&#13;
+
+* match xml.info.tool.name == "Karate" .................................... skipped
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:21 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:21)&#13;
+
+* match xml contains  "Karate" ............................................ skipped</failure>
+  </testcase>
+  <testcase classname="featurefiles.karate03Xml" name="Karate Json TestCase5" time="0.000974">
+    <failure message="karate03Xml.feature:28 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;&#10;xml\info\id&#13;&#10;   ^ in &lt;eval&gt; at line number 1 at column number 3&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml\info\id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:15 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:15)&#13;
+
+* match xml.info.tool.name == "Karate" .................................... skipped
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:21 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:21)&#13;
+
+* match xml contains  "Karate" ............................................ skipped
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:28 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:28)&#13;
+
+* match xml contains  "&lt;name&gt;Karate&lt;/name&gt;" ............................... skipped</failure>
+  </testcase>
+  <testcase classname="featurefiles.karate03Xml" name="Karate Json TestCase6" time="0.009444">
+    <failure message="karate03Xml.feature:55 - evaluation (js) failed: (   xml/info/tool[1]/name contains  &quot;Karate&quot; &amp;&amp;  assert xml/info/tool[2]/name contains  &quot;IntelliJ&quot; ), javax.script.ScriptException: &lt;eval&gt;:1:26 Expected ) but found contains&#13;&#10;(   xml/info/tool[1]/name contains  &quot;Karate&quot; &amp;&amp;  assert xml/info/tool[2]/name contains  &quot;IntelliJ&quot; )&#13;&#10;                          ^ in &lt;eval&gt; at line number 1 at column number 26&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* print xml ............................................................... passed
+* print xml\info\id ....................................................... passed
+* print xml.info.id ....................................................... passed
+* print xml.info.tool.name ................................................ passed
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:15 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:15)&#13;
+
+* match xml.info.tool.name == "Karate" .................................... skipped
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:21 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:21)&#13;
+
+* match xml contains  "Karate" ............................................ skipped
+Given def xml = &lt;info&gt;&lt;id&gt;101&lt;/id&gt;&lt;tool&gt;&lt;name&gt;Karate&lt;/name&gt;&lt;version&gt;0.9.6&lt;/version&gt;&lt;/tool&gt;&lt;/info&gt; . passed
+* match xml\info\id == "101" .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:28 - evaluation (js) failed: xml\info\id, javax.script.ScriptException: &lt;eval&gt;:1:3 Expected ; but found error&#13;
+xml\info\id&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match xml\info\id == "101" (karate03Xml.feature:28)&#13;
+
+* match xml contains  "&lt;name&gt;Karate&lt;/name&gt;" ............................... skipped
+Given def xml = ........................................................... passed
+* match xml/info/tool[1]/name contains  "Karate" .......................... passed
+* match xml/info/tool[2]/name contains  "IntelliJ" ........................ passed
+* assert true &amp;&amp; true ..................................................... passed
+* assert (   xml/info/tool[1]/name contains  "Karate" &amp;&amp;  assert xml/info/tool[2]/name contains  "IntelliJ" ) . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03Xml.feature:55 - evaluation (js) failed: (   xml/info/tool[1]/name contains  "Karate" &amp;&amp;  assert xml/info/tool[2]/name contains  "IntelliJ" ), javax.script.ScriptException: &lt;eval&gt;:1:26 Expected ) but found contains&#13;
+(   xml/info/tool[1]/name contains  "Karate" &amp;&amp;  assert xml/info/tool[2]/name contains  "IntelliJ" )&#13;
+                          ^ in &lt;eval&gt; at line number 1 at column number 26
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* assert (   xml/info/tool[1]/name contains  "Karate" &amp;&amp;  assert xml/info/tool[2]/name contains  "IntelliJ" ) (karate03Xml.feature:55)</failure>
+  </testcase>
+</testsuite>

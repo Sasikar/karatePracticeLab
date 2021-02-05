@@ -1,0 +1,7 @@
+<testsuite failures="0" name="src/test/java/featurefiles/karate19hooks.feature" skipped="0" tests="1" time="0.005534">
+  <testcase classname="src.test.java.featurefiles.karate19hooks" name="hookTestcase1" time="0.005534">
+    <system-out>* print "from backgrounfblock" ............................................ passed
+* configure afterFeature = ................................................ passed
+* print "from scebarioblock" .............................................. passed</system-out>
+  </testcase>
+</testsuite>

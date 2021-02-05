@@ -1,0 +1,22 @@
+<testsuite failures="0" name="featurefiles/karate14writingresponse.feature" skipped="0" tests="2" time="0.269843">
+  <testcase classname="featurefiles.karate14writingresponse" name="writing response to file" time="0.261595">
+    <system-out>* def util = Java.type("misc.MyUtils") .................................... passed
+Given url "https://reqres.in/api/users?page=2" ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res =  get response ................................................. passed
+* print res ............................................................... passed
+* util.writeToFile("jsonresult.json", res) ................................ passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.karate14writingresponse" name="reading result file" time="0.008248">
+    <system-out>* def util = Java.type("misc.MyUtils") .................................... passed
+Given url "https://reqres.in/api/users?page=2" ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res =  get response ................................................. passed
+* print res ............................................................... passed
+* util.writeToFile("jsonresult.json", res) ................................ passed
+* def data = read("classpath:jsonresult.json") ............................ passed
+* print data .............................................................. passed</system-out>
+  </testcase>
+</testsuite>

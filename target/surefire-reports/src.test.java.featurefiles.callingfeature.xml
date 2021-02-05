@@ -1,0 +1,11 @@
+<testsuite failures="1" name="src/test/java/featurefiles/callingfeature.feature" skipped="0" tests="1" time="1.1977">
+  <testcase classname="src.test.java.featurefiles.callingfeature" name="CallingFeature TestCase1" time="1.1977">
+    <failure message="callingfeature.feature:8 - assert evaluated to false: result.response.string._ == &quot;109&quot;">* def result = call read("calledfeature.feature") ......................... passed
+* print result ............................................................ passed
+* assert result.response.string._ == "109" ................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: callingfeature.feature:8 - assert evaluated to false: result.response.string._ == "109"&#13;
+	at ✽.* assert result.response.string._ == "109" (callingfeature.feature:8)</failure>
+  </testcase>
+</testsuite>

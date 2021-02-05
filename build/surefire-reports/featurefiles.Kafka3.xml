@@ -1,0 +1,281 @@
+<testsuite failures="0" name="featurefiles/Kafka3.feature" skipped="0" tests="8" time="1.111174">
+  <testcase classname="featurefiles.Kafka3" name="Creating Consumer" time="0.03097">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "sasi" .................................... passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Kafka3" name="Subscribing to topic" time="0.011342">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "sasi" .................................... passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Kafka3" name="Getting Subscription" time="0.014933">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "sasi" .................................... passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.topics[0] == "sasi" ..................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Kafka3" name="Getting Subscription records" time="1.016438">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "sasi" .................................... passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.topics[0] == "sasi" ..................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/records" .......... passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Kafka3" name="Getting assigned Assignments" time="0.01155">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "sasi" .................................... passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.topics[0] == "sasi" ..................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/records" .......... passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/assignments" ...... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.partitions[0].topic == "sasi" ........................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Kafka3" name="Deleting assigned subscription" time="0.005112">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "sasi" .................................... passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.topics[0] == "sasi" ..................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/records" .......... passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/assignments" ...... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.partitions[0].topic == "sasi" ........................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Kafka3" name="Deleting consumer" time="0.007421">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "sasi" .................................... passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.topics[0] == "sasi" ..................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/records" .......... passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/assignments" ...... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.partitions[0].topic == "sasi" ........................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi" .................. passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Kafka3" name="Deleting consumer - Negative Test Case" time="0.013407">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "sasi" .................................... passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.v2+json" ................. passed
+When method post .......................................................... passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.topics[0] == "sasi" ..................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/records" .......... passed
+And param timeout = 3000 .................................................. passed
+And param max_bytes = 300000 .............................................. passed
+And header Accept = "application/vnd.kafka.json.v2+json" .................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/assignments" ...... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* assert response.partitions[0].topic == "sasi" ........................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi/subscription" ..... passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi" .................. passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed
+Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group/instances/sasi" .................. passed
+And header Accept = "application/vnd.kafka.v2+json" ....................... passed
+When method delete ........................................................ passed
+Then status 404 ........................................................... passed
+* assert response.message == "Consumer instance not found." ............... passed</system-out>
+  </testcase>
+</testsuite>

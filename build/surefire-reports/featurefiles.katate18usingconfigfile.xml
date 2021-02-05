@@ -1,0 +1,9 @@
+<testsuite failures="0" name="featurefiles/katate18usingconfigfile.feature" skipped="0" tests="1" time="0.159289">
+  <testcase classname="featurefiles.katate18usingconfigfile" name="ConfigReading" time="0.159289">
+    <system-out>Given url baseUrl ......................................................... passed
+And path listUsers ........................................................ passed
+When method get ........................................................... passed
+* status 200 .............................................................. passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>
