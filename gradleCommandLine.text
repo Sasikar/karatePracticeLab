@@ -13,3 +13,7 @@ gradle test "-Dkarate.options=classpath:featurefiles/karate02Json.feature"
 parallel execution on scenario level not on feature level
 
 dev
+
+
+java StandAlone command:
+java -jar karate-0.9.6.jar featurefiles\karate07JsonRestService.feature
