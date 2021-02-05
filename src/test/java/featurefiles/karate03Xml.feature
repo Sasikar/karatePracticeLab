@@ -51,7 +51,7 @@ Feature: karateTestSuite3
     * match xml/info/tool[1]/name contains  "Karate"
     * match xml/info/tool[2]/name contains  "IntelliJ"
     * assert true && true
-
+    # testing
     * assert (   xml/info/tool[1]/name contains  "Karate" &&  assert xml/info/tool[2]/name contains  "IntelliJ" )
 
 

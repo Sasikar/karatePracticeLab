@@ -1,6 +1,7 @@
 Feature: karateTestSuite8
   validating with regular expressions
 
+  @sample
   Scenario: Karate Regular expression TestCase
     # my first testcase1 example
 

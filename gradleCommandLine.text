@@ -17,3 +17,10 @@ dev
 
 java StandAlone command:
 java -jar karate-0.9.6.jar featurefiles\karate07JsonRestService.feature
+
+java -jar karate-0.9.6.jar -t "soap" karate04SoapApi.feature
+
+java -jar karate-0.9.6.jar -t "sample" karate08.feature
+
+//all command line options
+java -jar karate-0.9.6.jar -h
